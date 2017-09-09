@@ -9,7 +9,15 @@ int main()
     int N = 0, M = 0;
     cin>>N>>M;
 
-    int data[N][M];
+    int data[N][M] = {{0}};
+
+
+    for(int i = 0; i<N; i++){
+        for(int j = 0;j < M; j++){
+           data[i][j] = 0;
+        }
+    }
+
 
     for(int i = 0; i<N; i++){
         int k = 0;
@@ -21,11 +29,11 @@ int main()
         }
     }
 
-    float constraint = floor(log2(double(M)))+ 1.0;
+    //float constraint = floor(log2(double(M)))+ 1.0;
     //cout<<constraint;
 
-    if(float(N) > constraint)
-        cout<<"YES"<<"yolo";
+    if((1<<N) > M)
+        cout<<"YES";
 
     else{
 
@@ -37,20 +45,17 @@ int main()
 
             for(int j=0;j<N;j++){ // each J represents a card
                 if(i & (1<<j)){//both are 1 means that it is in that subset which means that it is facing up. So, subsets here means cards that are facing up
-                    for(int k = 0; k<N;k++){
+
                         for(int l = 0; l<M;l++){
-                            if(data[k][l]) // kyonki seedha hai to 1 hoga
+                            if(data[j][l]) // kyonki seedha hai to 1 hoga
                                 occurance[l]++; // Y IS OCCURENCE ALWAYS GETTING INC!
                         }
                     }
-                }
                     else{
-                         for(int k = 0; k<N;k++){
                         for(int l = 0; l<M;l++){
-                            if(!data[k][l]) // kyonki is baar seedha nai hai to 0 hoga
+                            if(!data[j][l]) // kyonki is baar seedha nai hai to 0 hoga
                                 occurance[l]++;
                         }
-                    }
                     }
                 }
                 for(int c =0; c<M; c++){
@@ -59,15 +64,15 @@ int main()
                     }
                     if(counter == M){
                         flag = 1;
-                        cout<<i;
                     }
 
             }
             if(flag)
-                cout<<"YES"<<counter ;
+                cout<<"YES" ;
             else
                 cout<<"NO";
         }
 
     return 0;
 }
+
