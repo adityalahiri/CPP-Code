@@ -21,6 +21,7 @@ int main()
     int pos = 0;
 
     pos = word.find(A);
+    // what if not found!
     word.replace(pos, std::string(A).length(), temp);
 
     pos = word.find(B);

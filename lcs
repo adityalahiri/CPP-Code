@@ -1,0 +1,279 @@
+matrix=['C']*9
+print(matrix[0:3])
+print(matrix[3:6])
+print(matrix[6:9])
+matrix[0]='X'
+print(matrix[0:3])
+print(matrix[3:6])
+print(matrix[6:9])
+inp = int(input())
+if inp <= 9 and inp > 1 and inp != 5:
+    matrix[inp-1] = "O"
+    print(matrix[0:3])
+    print(matrix[3:6])
+    print(matrix[6:9])
+    if inp == 2:
+        matrix[6] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 7:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 4:
+                matrix[3] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+            else:
+                matrix[8] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 7 and inp3 != 9:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 5:
+                        matrix[7] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[4] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    elif inp == 3:
+        matrix[8] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 9:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 5:
+                matrix[4] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[6] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 9 and inp3 != 7:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 4:
+                        matrix[7] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[3] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    if inp == 4:
+        matrix[2] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 3:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+        print(matrix[6:9])
+            if inp2 != 2:
+                matrix[1] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[8] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 3 and inp3 != 9:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 5:
+                        matrix[5] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[4] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    if inp == 6:
+        matrix[6] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 7:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 4:
+                matrix[3] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[4] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 7 and inp3 != 5:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 3:
+                        matrix[8] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[2] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    if inp == 7:
+        matrix[8] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 9:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 5:
+                matrix[4] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[2] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 9 and inp3 != 3:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 2:
+                        matrix[5] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[1] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    if inp == 8:
+        matrix[2] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 3:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 2:
+                matrix[1] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[4] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 3 and inp3 != 5:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 7:
+                        matrix[8] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[6] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+    if inp == 9:
+        matrix[6] = "X"
+        print(matrix[0:3])
+        print(matrix[3:6])
+        print(matrix[6:9])
+        inp2 = int(input())
+        if inp2 <= 9 and inp2 > 1 and inp2 != 7:
+            matrix[inp2-1] = "O"
+            print(matrix[0:3])
+            print(matrix[3:6])
+            print(matrix[6:9])
+            if inp2 != 4:
+                matrix[3] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+#                 break
+            else:
+                matrix[2] = "X"
+                print(matrix[0:3])
+                print(matrix[3:6])
+                print(matrix[6:9])
+                inp3 = int(input())
+                if inp3 <= 9 and inp3 > 1 and inp3 != 7 and inp3 != 3:
+                    matrix[inp3-1] = "O"
+                    print(matrix[0:3])
+                    print(matrix[3:6])
+                    print(matrix[6:9])
+                    if inp3 == 5:
+                        matrix[1] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])
+                    else:
+                        matrix[5] = "X"
+                        print(matrix[0:3])
+                        print(matrix[3:6])
+                        print(matrix[6:9])

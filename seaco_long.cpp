@@ -86,7 +86,7 @@ int main()
             }
 
             for( int i = 0; i<num_int; i++)
-                cout<<array_original[i] % (1000000000 + 7)<<" ";
+                cout<<array_original[i] % (1000000  000 + 7)<<" ";
             cout<<endl;
         }
 

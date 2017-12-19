@@ -11,7 +11,7 @@ int main()
 
     while(num_times--){
 
-        unsigned long long int N = 0,j = 0; // take input as string
+        unsigned long long int N = 0,j = 0; // take input as to_string
         cin>>N;
         j = N;
 

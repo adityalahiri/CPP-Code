@@ -5,6 +5,7 @@ long long query1(long long value, multimap <long, long> data_key_time){
     //just iterate over time! as soon as value>=v break return time
     //map::find is log n time uses red black tree.
     // map:: find price in data_key_price. Start iter from there and then get min time bec. only those times have price > v
+
     for (itr = data_key_time.begin(); itr != data_key_time.end(); itr++)
     {
         if(itr-> second >= value)

@@ -29,7 +29,8 @@ int main()
             same++;
         }
      }
-     cout<<array_sorted[0]<<endl;
+     for(int i = 0; i<num_numbers)
+     cout<<array_sorted[i]<<endl;
      cout<<num_numbers - same + 1;
 
     return 0;
