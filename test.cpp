@@ -8,6 +8,10 @@ using namespace std;
 
 int main()
 {
-	int a = 2, b=2;
-	cout<<max(a,b);
+	string a,b;
+	cin>>a;
+	cout<<a;
+	cin>>b;
+	cout<<b;
+
 }
