@@ -24,9 +24,9 @@ int main(){
   for(int i = 0; i<26; i++){
 
     if(freq1[i] != 0 && freq2[i] != 0){
-
-      freq1[i]--;
-      freq2[i]--;
+      int m = min(freq1[i], freq2[i]);
+      freq1[i] = freq1[i] - m;
+      freq2[i] = freq2[i] - m;
 
     }
 
@@ -41,11 +41,18 @@ int main(){
 
   // flames part
 
+  if(iter == 0){
+
+    cout<<name1.length()<<" "<<name2.length()<<" "<<iter<<" "<<"f"<<endl;
+    return 0;
+
+  }
+
   int flames[6] = {0};
   int begin_loc = 0;
   int current_loc = 0;
 
-  for(int i = 0; i<5; i++){
+  for(int i = 0; i<5; i++){//wont always iter 5 times if iter<5
 
     current_loc = begin_loc;
 
@@ -54,7 +61,7 @@ int main(){
 
     while(count < iter - 1){
 
-
+    //  cout<<"yolo";
 
       if(flames[current_loc] == 1){
         current_loc = (current_loc + 1) % 6;
