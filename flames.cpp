@@ -102,6 +102,7 @@ int main(){
   //cout<<endl;
 
   cout<<name1.length()<<" "<<name2.length()<<" "<<iter<<" ";
+
   if(i == 0)
    cout<<"f";
   if(i == 1)
