@@ -22,6 +22,8 @@ int main(){
       cout<<temp<<endl;
       continue;
 
+    
+
     }
 
     std::vector<ll> v[n];
