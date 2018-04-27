@@ -2,7 +2,9 @@
 
 using namespace std;
 
-typedef struct Node{
+typedef struct Node Node;
+
+struct Node{
 
   int value;
   Node* left;
@@ -18,7 +20,7 @@ typedef struct Node{
 
   }
 
-}Node;
+};
 
 int height(Node* root){
 
