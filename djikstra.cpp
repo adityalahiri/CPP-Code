@@ -9,7 +9,7 @@ int main(){
   int n = 0, m = 0;
   cin>>n>>m;
 
-  vector< pair<int,int> > data[n+1]; // 1 indexing
+  vector< pair<int,int> > data[n+1]; // 1 indexing. Will store edge and weights in adj list format
 
   int distance[n+1]; // keeps distance from source vertex
   int visited[n+1]; // 0 signifies not out of priority queue yet(ie doesnt not have min dis for it yet), 1 opposite.
@@ -66,10 +66,11 @@ int main(){
         int wt = p.second;
         int curr_vertex = p.first;
 
-        if(distance[curr_vertex] > wt + distance[vertex]){
+        if(distance[curr_vertex] > wt + distance[vertex]){ // relaxation.
 
           int new_dist = wt + distance[vertex];
-          distance[curr_vertex] = new_dist;
+          distance[curr_vertex] = new_dist;//update new relaxed smaller dist in parent dist array
+          // need to do this to get current min distances in O(1)
           dj.insert(make_pair(new_dist,curr_vertex));
 
         }
